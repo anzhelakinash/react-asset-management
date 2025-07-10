@@ -1,6 +1,5 @@
 import { RouterProvider } from "react-router-dom";
 import { useContext } from "react";
-import { SplashScreen } from "@tk/tk-common-components";
 import { AuthContext } from "../../api/auth/TkAuthService";
 
 import routes from "../../config/routes";
@@ -10,14 +9,14 @@ function Router() {
   const authContext = useContext(AuthContext);
 
   if (!authContext.user) {
-    return <SplashScreen />;
+    return <>Loading...</>;
   }
 
   if (!authContext.user.authenticated) {
     return <Error403 />;
   }
 
-  return <RouterProvider router={routes} fallbackElement={<SplashScreen />} />;
+  return <RouterProvider router={routes} />;
 }
 
 export default Router;
