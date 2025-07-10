@@ -1,0 +1,4 @@
+.defaultView {
+  background-color: var(--mui-palette-background-default);
+  color: var(--mui-palette-text-secondary);
+}
