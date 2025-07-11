@@ -22,7 +22,7 @@ function HomeView({}: ViewProps) {
   const navigate = useNavigate();
 
   // User name would normally come from authentication or user context
-  const userName = "Mr. Frei & Ms.Buhmann"; 
+  const userName = "Mr.Frei & Mr.Buhmann";
 
   // Define the feature cards for the dashboard homepage
   const cards = [
